@@ -1,13 +1,3 @@
-classroom/
-init/
-models/
+.env
 node_modules/
-public/
-routes/
-utils/
-views/
-app.js/
-middleware.js/
-schema.js/
-package-lock.json/
-package.json
+**/.DS_Store

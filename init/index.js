@@ -13,12 +13,12 @@ main()
   });
 
 async function main() {
-  await mongoose.connect(MONGO_URL);
+  await mongoose.connect('mongodb+srv://lokeshgulghane:dtjGBtFRAyLcXZq9@cluster0.fwdjpaj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 }
 
 const initDB = async () => {
   await Listing.deleteMany({});
-  initData.data = initData.data.map((obj) => ({...obj, owner: "652d0081ae547c5d37e56b5f"}));
+  initData.data = initData.data.map((obj) => ({ ...obj, owner: "68a3375c31e5b32320bca3b8" }));
   await Listing.insertMany(initData.data);
   console.log("data was initialized");
 };
